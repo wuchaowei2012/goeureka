@@ -94,7 +94,7 @@ func GetServiceInstances(appName string) ([]Instance, error) {
 		Accept:      "application/json;charset=UTF-8",
 		ContentType: "application/json;charset=UTF-8",
 	}
-	log.Println("Query Eureka server using URL: " + requestAction.Url)
+	// log.Println("Query Eureka server using URL: " + requestAction.Url)
 	bytes, err := executeQuery(requestAction)
 	if len(bytes) == 0 {
 		log.Printf("Query Eureka Response is None")
